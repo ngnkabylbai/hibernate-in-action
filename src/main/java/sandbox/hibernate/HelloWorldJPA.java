@@ -44,7 +44,7 @@ public class HelloWorldJPA {
     
     List<Message> messages = entityManager.createQuery("select m from Message m").getResultList();
     
-    messages.get(0).setText("Updated Hellow world text!");
+    messages.get(0).setText("Updated Hello world text!");
     
     entityManager.getTransaction().commit();
     entityManager.close();
